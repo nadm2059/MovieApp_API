@@ -134,3 +134,10 @@ button:hover {
     margin: 0 0 10px 0;
 }
 
+p {
+    font-size: 0.9em;
+    color: #555;
+    max-height: 60px; /* limit height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
