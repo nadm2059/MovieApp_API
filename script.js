@@ -77,7 +77,9 @@ function fetchMovies(query, genreId = 'all') {
                     <img src="${posterUrl}" alt="${movie.title} poster" style="width: 200px; border-radius: 10px;"><br>
                     <h4>${movie.title}</h4>
                     <p>${movie.release_date}</p>
-                    <p>${movie.overview}</p>
+                    <div style="max-height: 100px; overflow-y: auto; font-size: 0.9em; color: #555; margin-bottom: 10px;">
+                        ${movie.overview}
+                    </div>
                     <button>Add to favorites</button>
                 `;
 
