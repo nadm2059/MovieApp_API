@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Movie Project using API</title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <h1 style = "text-align: center">Movie Explorer</h1>
+    <!-- Define input for user to search for movie -->
+        <input type = "text" id = "moviesearch" placeholder = "Search for a movie..">
+        <button id = "search-button">Search</button>  <!-- Button to search for a movie-->
+        <!-- Create a dropdown menu (select element) with the ID 'genre-filter' -->
+        <select id="genre-filter">
+    <!-- Add an option to the dropdown with the value 'all' and label 'All Genres' -->
+            <option value="all">All Genres</option>
+        </select>
+
+    <!-- Container to display movie results after button is pressed -->
+        <div id = "search-results"></div>
+        <!--Define a favorites section-->
+        <h3>Favorites</h3>
+        <div id = "favs"></div> <!-- Container for storing afvorites-->
+        <!-- Modal Popup for Movie Details -->
+<!-- Container div for the entire modal, with ID 'movie-modal' and class 'modal' -->
+        <div id="movie-modal" class="modal">
+    
+    <!-- Inner container for modal content, with class 'modal-content' -->
+            <div class="modal-content">
+        
+        <!-- Close button for the modal, represented by a span with ID 'modal-close' -->
+                <span id="modal-close">&times;</span>
+        
+        <!-- Heading element for the movie title, with ID 'modal-title' -->
+                <h2 id="modal-title"></h2>
+        
+        <!-- Image element to display the movie poster or image, with ID 'modal-img' -->
+                <img id="modal-img" />
+        
+        <!-- Paragraph element for the movie overview or description, with ID 'modal-overview' -->
+                <p id="modal-overview"></p>
+        
+        
+            </div> <!-- End of modal-content -->
+
+        </div> <!-- End of movie-modal -->
+
+        <script src = "script.js"></script>
+
+
+    </body>
+
+</html>

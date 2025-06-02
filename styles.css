@@ -1,0 +1,136 @@
+/* Set global styles for the entire page */
+body {
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    padding: 20px; /* Inner spacing */
+    margin: 0; /* Remove default margin */
+    background: linear-gradient(to right, #fceabb, #f8b500); /* Bright gradient background */
+    color: #222; /* Dark text for readability */
+}
+
+/* Style all heading elements */
+h1, h2, h3, h4 {
+    color: #2f2f2f; /* Bold dark headings */
+}
+h1 {
+
+    color: #d32f2f;
+    font-family: 'Georgia', 'Times New Roman', serif; /* Fancy serif font */
+    font-size: 40px;
+    background-color: #fff3e0; /* Soft background */
+    padding: 8px;
+    border-radius: 8px;
+    margin: 0 0 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional soft shadow */
+
+}
+
+/* Style the movie search input field */
+#moviesearch {
+    padding: 10px; /* Inner padding */
+    width: 300px; /* Width of input field */
+    font-size: 16px; /* Text size */
+    margin-right: 10px; /* Space between input and button */
+    border: 2px solid #ff6f61; /* Pinkish border */
+    border-radius: 6px; /* Rounded corners */
+    background-color: #fff3e0; /* Soft yellow background */
+    color: #333; /* Dark text */
+}
+
+/* Style the search button */
+#search-button {
+    padding: 10px 20px; /* Button size */
+    background-color: #ff6f61; /* Vibrant coral */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Change button background color on hover */
+#search-button:hover {
+    background-color: #ff3d00; /* Strong orange on hover */
+}
+
+/* Layout for search results and favorites sections */
+#search-results, #favs {
+    margin-top: 30px; /* Space above */
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+}
+
+/* Style each movie/favorite card */
+#search-results div, #favs div {
+    background: linear-gradient(to top, #ffe0e0, #ffeaa7); /* Soft pastel gradient */
+    border: 2px solid #f08080; /* Light red border */
+    padding: 15px; /* Inner spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation for hover */
+    margin: 0 auto 10px auto;
+}
+
+/* Hover effect for cards */
+#search-results div:hover, #favs div:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+/* Title styling in cards */
+#search-results h4, #favs h4 {
+    margin: 0 0 10px 0; /* Space below */
+    color: #d32f2f; /* Strong red titles */
+}
+
+/* Release date or additional info styling */
+#search-results p {
+    margin: 0 0 10px 0; /* Space below */
+    font-size: 14px; /* Smaller text */
+    color: #5d4037; /* Brown text for contrast */
+}
+
+/* Generic button style (e.g., Add to favorites) */
+button {
+    cursor: pointer; /* Pointer on hover */
+    padding: 8px 14px; /* Size of button */
+    background-color: #64b5f6; /* Bright sky blue */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* White text */
+    font-weight: bold; /* Bold font */
+    transition: background-color 0.3s, transform 0.2s; /* Animations */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #1976d2; /* Deep blue on hover */
+    transform: scale(1.05); /* Slight zoom */
+}
+
+#search-results img, #favs img {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+}
+
+/* Alternating background colors for search results */
+#search-results .even {
+    background: linear-gradient(to top, #ffe0e0, #ffeaa7); /* Light red/yellow */
+    text-align: center;
+}
+
+#search-results .odd {
+    text-align: center;
+    background: linear-gradient(to top, #e0f7fa, #a7ffeb); /* Light blue/green */
+}
+
+/* Center the movie titles in search results */
+.movie-title {
+    text-align: center;
+    color: #d32f2f;
+    margin: 0 0 10px 0;
+}
+
