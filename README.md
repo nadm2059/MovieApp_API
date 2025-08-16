@@ -99,11 +99,8 @@ Feel free to fork, modify, and use it for your own projects.
 
 ---
 
-**Author:** Your Name
+**Author:** Nadhirah Michael-Ho
 **API Credit:** This product uses the TMDb API but is **not** endorsed or certified by TMDb.
 
 ```
 
-
-If you want, I can also make a **colored emoji-enhanced version** so that your README looks more eye-catching on GitHub’s dark/light themes. That would give it the same visual pop as your binary tree README.
-```
